@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>{{page.title}}</title>
+  </head>
+
+  <body>
+    <header style="height:100px;">
+      <h2 class="headfont">About</h2>
+    </header>
+
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-8 card">
+        <div class="card-body">
+          You can contact me by 786789551@qq.com.
+        </div>
+      </div>
+      <div class="col-2">
+        {% include var.html %}
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Copyright©Mariah 2019.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) {
+   .container{
+     width: 576px; /* 100% */
+   }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {
+   .container{
+     width: 614px; /* 80% */
+   }
+ }
+
+  /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) {
+   .container{
+     width: 694px;/* 70% */
+   }
+ }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+   .container{
+     width: 720px;/* 60% */
+   }
+ }
+
+
+header{
+  display: block;
+  padding-top: 20px;
+  background-image: url('/assets/images/header.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: inherit;
+}
+footer{
+  border-top: 1px dashed #d9d9f7;
+  padding: 10px;
+  width: inherit;
+  height: 50px;
+  text-align: center;
+  color: #bcbcf1;
+}
+a{
+  color: #9696e8;
+  font-family: "Times New Roman";
+}
+img{
+  width: inherit;
+  height: auto;
+}
+.row{
+  width: 100%;
+  height: auto;
+}
+.headfont{
+  color: #ffffff;
+  font-family: "Times New Roman";
+  text-align: center;
+}
+.timefont{
+  font-family: "方正喵呜体";
+  color: #9696e8;
+  text-align: center;
+}
+
+.varfont{
+  position: relative;
+  margin: 6px;
+  color: #9e9ea3;
+  font-family: "方正喵呜体";
+}
+.varfont::before{
+  position: absolute;
+  content: '';
+  left: -5px;
+  width: 2px;
+  height: 100%;
+  background: #bcbcbd;
+}
+
+.headerimg{
+  /* display: block; */
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  width:40px;
+  height: 40px;
+  text-align: center;
+}
+.saying{
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "方正喵呜体";
+  text-align: center;
+}
+.card{
+  border: none;
+}
+.col-1{
+  position: relative;
+  /* border: 2px solid #E6E6FA; */
+}
+.col-1-img{
+  margin: 20px;
+  border-radius: 50%;
+  background-color: #bcbcf1;
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+}
+.col-1::after{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 53px;
+  width: 2px;
+  height: 100%;
+  background: #bcbcf1;
+}
+.col-2{
+  margin-top: 25px;
+  margin-left: 30px;
+  /* border: 2px solid #E6E6FA; */
+  /* padding: 1px; */
+}
+.col-5{
+ position: relative;
+ margin: 10px;
+ border: 2px solid #d9d9f7;
+ border-radius: 10px;
+ padding: 10px 30px;
+ background-image: url('/assets/images/card.jpg');
+ background-repeat: no-repeat;
+ background-size: 100%;
+ width: inherit;
+ font-family: "Times New Roman";
+ color: #ffffff;
+}
+/* triangle */
+.col-5::before{
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 100%;
+  border: 15px solid transparent;
+  border-right: 15px solid #d9d9f7;
+}
+.btn{
+  background-color: #E6E6FA;
+  color: #9f9fea;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>{{page.title}}</title>
+  </head>
+
+  <body>
+    <header style="height:100px;">
+      <h2 class="headfont">{{page.title}}</h2>
+      <h4 class="timefont" style="color:white;">{{page.date | date_to_string}}</h4>
+    </header>
+
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-8 card">
+        <div class="card-body">
+          {{content}}
+        </div>
+      </div>
+      <div class="col-2">
+        {% include var.html %}
+      </div>
+
+    </div>
+
+    <footer>
+      <p>Copyright©Mariah 2019.</p>
+    </footer>
+  </body>
+</html>

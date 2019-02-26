@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    <title>Mariah's Blog</title>
+
+  </head>
+
+  <body>
+    <header style="height: 250px;">
+      <h1 class="headfont">Mariah</h1>
+      <div class="text-center">
+        <a href="https://github.com/ooozy"  target="_blank">
+          <img class="headerimg" src="/assets/images/github.svg"  alt="github">
+        </a>
+        <a href="mailto:786789551@qq.com?&subject=Blog%20Question">
+          <img class="headerimg" src="/assets/images/email.svg" alt="email">
+        </a>
+      </div>
+      <p class="saying">我觉得相互走来比较好</p>
+    </header>
+
+    <div class="row">
+      <div class="col-2">
+        {% include var.html %}
+      </div>
+
+      <div class="col-8">
+        {% for post in site.posts %}
+        <div class="row justify-content-center">
+          <div class="col-1">
+            <img class="col-1-img" src="/assets/images/灯泡.svg" alt="lamb">
+          </div>
+
+          <div class="col-2 timefont"><h4>{{post.date | date_to_string}}</h4></div>
+
+          <div class="col-5">
+            <h5>{{post.title}}</h5>
+            <p>{{post.excerpt}}</p>
+            <a class="btn" href="{{post.url}}" target="_blank">More</a>
+          </div>
+
+        </div>
+        {% endfor %}
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Copyright©Mariah 2019.</p>
+  </footer>
+
+  </body>
+</html>
