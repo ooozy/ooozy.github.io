@@ -21,20 +21,20 @@
 
 
   <main class="row">
-      <div class="col-2">
+      <div class="col-3">
         {% include var.html %}
       </div>
 
       <div class="col-9">
         {% for post in site.posts %}
-        <div class="row justify-content-center">
+        <div class="row">
           <div class="col-1">
             <img class="col-1-img" src="/assets/images/灯泡.svg" alt="lamb">
           </div>
 
           <div class="col-2 timefont">{{post.date | date_to_string}}</div>
 
-          <div class="col-6">
+          <div class="col-7">
             <h5>{{post.title}}</h5>
             <p>{{post.excerpt}}</p>
             <a class="btn" href="{{post.url}}" target="_blank">More</a>

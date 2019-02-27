@@ -7,18 +7,17 @@
 
   <body>
     <header style="background-image: url('/assets/images/header-1.jpg');">
-      <h2 class="headfont">{{page.title}}</h2>
-      <h4 class="timefont" style="color:white;">{{page.date | date_to_string}}</h4>
+      <p class="headfont">{{page.title}}</p>
+      <p class="timefont" style="color:white;">{{page.date | date_to_string}}</p>
     </header>
 
     <main class="row">
-      <div class="col-1"></div>
-      <div class="col-7">
-        <!-- <div class="card-body"> -->
-          {{content}}
-        <!-- </div> -->
+
+      <div class="col-8">
+        {{content}}
       </div>
-      <div class="col-2">
+
+      <div class="col-3">
         {% include var.html %}
       </div>
 

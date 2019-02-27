@@ -1,17 +1,12 @@
-<h4><a href="{{site.url}}" target="_self">Home</a></h4>
+<h5><a href="{{site.url}}" target="_self">Home</a></h5>
   <ul class="nav flex-column varfont">
-
-    {% for category in site.categories %}
+  {% for category in site.categories %}
     <li class="nav-item varfont">
-      <h4>{{category[0]}}</h4>
+      <h6>{{category[0]}}</h6>
         {% for post in category[1] %}
           <a class="nav-link active" href="{{post.url}}">{{ post.title }}</a>
         {% endfor %}
     </li>
-    {% endfor %}
-
-    <!-- <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li> -->
+  {% endfor %}
   </ul>
-<h4><a href="/about/" target="_blank">About</a></h4>
+<h5><a href="/about/" target="_blank">About</a></h5>
